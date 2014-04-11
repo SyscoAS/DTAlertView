@@ -265,6 +265,8 @@ const static CGFloat kMotionEffectExtent = 15.0f;
     
     _showForInputPassword = NO;
     
+    _shouldAutoDismiss = NO;
+    
     [self setCancelButtonIndex];
     
     return self;
@@ -1337,7 +1339,7 @@ const static CGFloat kMotionEffectExtent = 15.0f;
         _clickedBlock = nil;
     }
     
-    if (!_showForInputPassword) {
+    if (_shouldAutoDismiss) {
         [self dismissWithAnimation:_animationWhenDismiss];
     }
 }

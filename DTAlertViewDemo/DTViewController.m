@@ -202,6 +202,8 @@
             
             [alertView showForPasswordInputWithAnimation:DTAlertViewAnimationDefault];
             
+            [alertView setShouldAutoDismiss:NO];
+            
             // Set text field to secure text mode after show.
             [alertView.textField setSecureTextEntry:YES];
         }

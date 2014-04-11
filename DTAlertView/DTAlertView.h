@@ -150,6 +150,8 @@ typedef void (^DTAlertViewTextDidChangeBlock)(DTAlertView *alertView, NSString *
  */
 @property (nonatomic, retain) UIColor *progressBarColor;
 
+@property (nonatomic, assign) BOOL shouldAutoDismiss;
+
 /** @brief Initial for class method with delegate.
  *
  * @param title The alert view title. appears in the title bar.
